@@ -1,0 +1,392 @@
+/* COLORES DE LA WEB
+Plomo : #626262;
+Verde : #46AC34; */
+
+
+/* navbar-nav 
+
+"navbar-brand*/
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto' , sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F0D5D9;
+  background: url(imagenes/fondo.png);
+}
+
+nav img{
+  width: 200px;
+}
+
+h1 {
+  color: white;
+}
+
+
+.logotipo img{
+  width: 100%;
+}
+
+.container img{
+  width: 50%;
+}
+
+/*INICIO PRODUCTOS*/
+.gallery-section{
+  width: 100%;
+  padding: 60px 0;
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+.galeorden{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.gale{
+  width: 700px;
+  height: 50px;
+  background-color: red;
+  border-radius: 10px; 
+
+}
+.gale h2{
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 5px;
+}
+
+.gallery-section .gallery{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.image{
+  padding: 10px;
+}
+
+.gallery-section .image{
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-section .image img{
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+/*.gallery-section .image:hover img{
+  transform: scale(1.4) rotate(15deg);
+}*/
+
+@media screen and (max-width:960px) {
+  .gallery-section .image{
+    flex: 33.33%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .gallery-section .image{
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .gallery-section .image{
+    flex: 100%;
+  }
+}
+/*FIN PRODUCTOS*/
+.imgfoot img {
+  width: 100%;
+}
+
+
+.separador {
+  width: 100%;
+  height: 250px;
+  background-image: url('img/1264.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+/*  margin-bottom: 60px;*/
+}
+.text-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map iframe{
+  width: 100%;
+  margin-bottom: -10px;
+}
+
+.nav-link{
+  font-weight: 400;
+}
+
+.carousel{
+  margin-top: -30px;
+}
+
+.container h2{
+  font-size: 50px;
+  color: red;
+  font-weight: bold;
+}
+.jumbotron{
+  margin-bottom: 0px;
+  background-color: #626262; 
+}
+.logotipo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.logotipo img{
+width: 350px;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+.btn-purple {
+  border-color: #8366B0;
+  background-color: #8366B0;
+  color: white;
+  margin: 1rem;
+}
+.btn-purple:hover,
+.btn-purple:focus {
+  border-color: #594781;
+  background-color: #594781;
+  color: white;
+}
+
+.feature img {
+  padding: 1.5rem;
+}
+/*
+@media screen and (max-width: 480px){
+   .carousel-inner img{
+    width: 1200px;
+    height: 100%;
+   }
+
+}*/
+
+/*LLAMAR*/
+
+.phonelink{
+    position: fixed; /* Lock location always on the scree */
+    bottom: -70px; /* Set to the bottom */
+    right: -70px; /* Set to the right */
+    margin: 80px; /* Add space around background */
+}
+.phoneicon{
+    width: 40px; /* Set width of icon */
+    height: 40px; /* Set height of icon */
+}
+@media screen and (max-width: 480px){
+    .lgscreenphone{
+        display: none;  /* On small screens make phone icon disappear */
+    }
+    .mbscreenphone{
+        display: block; /* On small screens make phone icon appear */
+    }
+}
+@media screen and (min-width: 481px){
+    .mbscreenphone{
+        display: none; /* On large screens make phone icon disappear */
+    }
+    .lgscreenphone{
+        display: block; /* On large screens make phone icon appear */
+    }
+}
+
+
+/* PROMOCIONES */
+
+
+
+
+
+/*FOOTER*/
+
+.body-content {
+  width: 100%;
+  padding: 20px;
+  text-align: justify;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.footer {
+  width: 100%;
+/*  background: #46AC34;*/
+  display: block;
+}
+
+.inner-footer {
+  width: 95%;
+  margin: auto;
+  padding: 30px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.footer-items {
+  width: 25%;
+  box-sizing: border-box;
+  margin: 50px;
+}
+
+h5 {
+  padding: 10px 0;
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer-items p {
+  color: grey;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 25px;
+  color:  #fff;
+}
+
+h6 {
+  margin: 10px 0;
+  color: grey;
+  font-size: 16px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.border {
+  height: 2px;
+  width: 40px;
+  background: #ff9800;
+}
+
+ul {
+  list-style: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  padding: 0;
+}
+
+ul a {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+ul a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+ul li {
+  margin: 10px 0;
+  height: 25px;
+}
+
+li i {
+  margin-right: 20px;
+}
+
+.social-media {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.social-media i {
+  height: 15px;
+  width: 15px;
+  margin: 20px 5px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 50%;
+/*  border: 1px solid grey;*/
+  transition: 0.3s;
+}
+
+.social-media i:hover {
+/*  background: grey;*/
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background:  #188900;
+  color: #fff;
+  font-size: 12px;
+}
+
+.publicidad{
+  color: white;
+}
+.publicidad:hover{
+  color: blue;
+  text-decoration: none;
+}
+.espa{
+  width: 3px;
+}
+@media screen and (max-width: 1085px) {
+  .footer-items {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-items {
+    width: 100%;
+  }
+  .Servi{
+  height: 400px;
+  }
+  .carousel-inner img {
+  width: 100%;
+  height: 100%;
+  }
+  .opi img{
+    margin-left: 10px;
+  }
+  .container img{
+  width: 100%;
+}
+}
+
+/*-- Extra Bootstrap Column Padding --*/
+
+[class*="col-"] {
+  padding: 1rem;
+}
